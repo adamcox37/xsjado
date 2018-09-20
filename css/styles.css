@@ -1,1 +1,57 @@
-//CSS
+/*****************************
+			General
+*****************************/
+
+/** Manual Slideshow **/
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.mySlides {
+	display: none;
+}
+
+/*.slideImg {
+	max-width: 600px;
+}*/
+
+/* Next & Prev buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: black;
+	font-weight: black;
+	font-size: 3em;
+}
+
+.next {
+	right: 0;
+}
+
+/* Dots */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6 ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+/*****************************
+		MEDIA QUERIES
+*****************************/
