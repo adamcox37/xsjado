@@ -1,5 +1,38 @@
+// Nav Dropdown //
 
+// When the user clicks on the button, toggle between hiding and showing the dropdown content
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
+// Close the dropdown menu if the user clicks outside of it
+window.onclick= function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns= document.getElementById("dropdown-content");
+    var i;
+    for (i= 0; i < dropdowns.length; i++) {
+      var openDropdown= dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+// SHRINKING NAV BAR //
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementsByIdName("navbar").style.padding = "30px 10px";
+    document.getElementsByIdName("logo").style.padding ="25px";
+  } else {
+    document.getElementsByIdName("navbar").style.padding = "80px 10px";
+    document.getElementsByIdName("logo").style.padding ="35px";
+  }
+}
 // MANUAL SLIDESHOW //
 
 var slideIndex = 1;
@@ -10,7 +43,7 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+// Image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
