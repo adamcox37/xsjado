@@ -2,36 +2,37 @@
 			General
 *****************************/
 
-body {
-	font-family: 'Montserrat', sans-serif;
+body, html {
 	height: 100%;
 	margin: 0;
-}
-
-.primary-img {
-	background-image: url(../img/background.jpg);
-	background-image: url(../img/sean_kelso.png);
-	min-height: 100%
-}
-
-.secondary-img {
-	background-image: url("img/xsjado_skate_1.png");
-	min-height: 400px;
-}
-
-.tertiary-img {
-	background-image: url("img/xsjado_footwraps.png");
-	min-height: 400px;
+	font-family: 'Montserrat', sans-serif;
+	color: #777;
 }
 
 .primary-img, .secondary-img, .tertiary-img {
 	position: relative;
-	opacity: 0.5;
+	opacity: 0.65;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+.primary-img {
+	background-image: url(../img/sean_kelso.jpg);
+	min-height: 100%
+}
+
+.secondary-img {
+	background-image: url(../img/xsjado_team.jpg);
+	min-height: 400px;
+}
+
+.tertiary-img {
+	background-image: url(../img/xsjado_sean_chris.jpg);
+	min-height: 400px;
+}
+
 
 .caption {
 	position: absolute;
@@ -39,20 +40,38 @@ body {
 	top: 50%;
 	width: 100%;
 	text-align: center;
-	color: red;
+	color: #000;
 }
 
 .caption span.border {
-	background-color: yellow;
+	color: #fff;
 	padding: 20px;
-	font-size: 24px;
+	font-size: 3em;
 	letter-spacing: 10px;
 }
 
-.block {
-	position: relative;
+h3 {
+	letter-spacing: 7px;
+	text-transform: uppercase;
+	font: 20px;
+	color: #111;
 }
+
+.block {
+	color: #777;
+	background-color: white;
+	text-align: center;
+	padding: 50px 80px;
+	text-align: justify;
+}
+
 /*****************************
 		MEDIA QUERIES
 *****************************/
 
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .primary-img, .secondary-img, .tertiary-img {
+        background-attachment: scroll;
+    }
+}
