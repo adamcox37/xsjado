@@ -1,7 +1,7 @@
 // Nav Dropdown //
 
 // When the user clicks on the button, toggle between hiding and showing the dropdown content
-function myFunction() {
+f/*unction myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
@@ -52,7 +52,7 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
-}
+}*/
 
 // MANUAL SLIDESHOW //
 
