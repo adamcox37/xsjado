@@ -9,6 +9,12 @@ body, html {
 	color: #777;
 }
 
+a {
+	text-decoration: none;
+	color: #111;
+	display: inline;
+}
+
 .primary-img, .secondary-img, .tertiary-img {
 	position: relative;
 	opacity: 0.65;
@@ -65,6 +71,12 @@ h3 {
 	text-align: center;
 	padding: 50px 80px;
 	text-align: justify;
+}
+
+.shop {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 40px;
 }
 
 /*** Slideshow ***/
@@ -130,13 +142,37 @@ h3 {
   background-color: #717171;
 }
 
+/*** Footer ***/
+
+footer {
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 10px 5px 5px;
+}
+
+footer p {
+	color: white;
+}
+
+.extra-white {
+	background-color: white;
+	margin: 20px;
+}
 /*****************************
 		MEDIA QUERIES
 *****************************/
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
+@media (max-device-width: 1024px) {
+
     .primary-img, .secondary-img, .tertiary-img {
         background-attachment: scroll;
     }
 }
+
+
+
+
+
+
